@@ -24,9 +24,19 @@ movement_result_t exitLogic(inventory_t* inventory, item_t* item)
 //This is the AI for when you hit something you can pick up
 movement_result_t grabLogic(inventory_t* inventory, item_t* item)
 {
-    printf("You found a %s!\n\t%s\n", item->name, item->description);
+    printf("You found %s!\n\t%s\n", item->name, item->description);
     insertToTailOfList(inventory, item);
     return CAN_MOVE;
+}
+
+movement_result_t encounterLogic(inventory_t* inventory, item_t* item)
+{
+    //TODO: Implement combat loop
+    //int monsterHealth = 50;
+    //printf("You come across a monster. /nIt charges towards you");
+    //printf("The monster dropped a %s!\n\t%s\n", item->name, item->description);
+    //insertToTailOfList(inventory, item);
+    //return CAN_MOVE;
 }
 
 

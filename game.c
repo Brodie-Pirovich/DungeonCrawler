@@ -18,6 +18,8 @@ void freeMemory(world_t* world, inventory_t* inventory);
 int main()
 {
     inventory_t* playerInventory = createInventory();
+    // TODO: Add a health item to the inventory to keep track of player health
+
     system("cls");
     printf("Welcome to the Dungeon!\n\n\n");
 
