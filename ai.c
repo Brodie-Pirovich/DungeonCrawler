@@ -32,11 +32,10 @@ movement_result_t grabLogic(inventory_t* inventory, item_t* item)
 movement_result_t encounterLogic(inventory_t* inventory, item_t* item)
 {
     //TODO: Implement combat loop
-    //int monsterHealth = 50;
-    //printf("You come across a monster. /nIt charges towards you");
-    //printf("The monster dropped a %s!\n\t%s\n", item->name, item->description);
-    //insertToTailOfList(inventory, item);
-    //return CAN_MOVE;
+    printf("You come across a monster. /nIt charges towards you but you take it down with one swing of your sword.");
+    printf("The monster dropped a %s!\n\t%s\n", item->name, item->description);
+    insertToTailOfList(inventory, item);
+    return CAN_MOVE;
 }
 
 
@@ -51,6 +50,10 @@ AiBehaviour textToBehaviour(const char* aiText)
     else if(strcmp(aiText, "GRAB_LOGIC") == 0)
     {
         behaviour = grabLogic;
+    }
+    else if(strcmp(aiText, "ENCOUNTER_LOGIC") == 0)
+    {
+        behaviour = encounterLogic;
     }
     
     return behaviour;
