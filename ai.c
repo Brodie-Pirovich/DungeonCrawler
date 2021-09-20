@@ -55,6 +55,10 @@ AiBehaviour textToBehaviour(const char* aiText)
     {
         behaviour = encounterLogic;
     }
+    else
+    {
+        printf("Error!");
+    }
     
     return behaviour;
 }
