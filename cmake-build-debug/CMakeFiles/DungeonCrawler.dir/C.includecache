@@ -6,45 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/bpiro/Documents/Source/DungeonCrawler/LinkedList.c
-LinkedList.h
-C:/Users/bpiro/Documents/Source/DungeonCrawler/LinkedList.h
-stdlib.h
--
-stdio.h
--
-string.h
--
-
 C:/Users/bpiro/Documents/Source/DungeonCrawler/LinkedList.h
 game.h
 C:/Users/bpiro/Documents/Source/DungeonCrawler/game.h
 
-C:/Users/bpiro/Documents/Source/DungeonCrawler/ai.c
-ai.h
 C:/Users/bpiro/Documents/Source/DungeonCrawler/ai.h
-game.h
-C:/Users/bpiro/Documents/Source/DungeonCrawler/game.h
-LinkedList.h
-C:/Users/bpiro/Documents/Source/DungeonCrawler/LinkedList.h
-stdlib.h
--
-stdio.h
--
-string.h
--
-
-C:/Users/bpiro/Documents/Source/DungeonCrawler/ai.h
-
-C:/Users/bpiro/Documents/Source/DungeonCrawler/fileIO.c
-fileIO.h
-C:/Users/bpiro/Documents/Source/DungeonCrawler/fileIO.h
-stdio.h
--
-stdlib.h
--
-string.h
--
 
 C:/Users/bpiro/Documents/Source/DungeonCrawler/fileIO.h
 game.h
@@ -67,24 +33,4 @@ C:/Users/bpiro/Documents/Source/DungeonCrawler/LinkedList.h
 C:/Users/bpiro/Documents/Source/DungeonCrawler/game.h
 ai.h
 C:/Users/bpiro/Documents/Source/DungeonCrawler/ai.h
-
-C:/Users/bpiro/Documents/Source/DungeonCrawler/player.c
-player.h
-C:/Users/bpiro/Documents/Source/DungeonCrawler/player.h
-stdlib.h
-C:/Users/bpiro/Documents/Source/DungeonCrawler/stdlib.h
-
-C:/Users/bpiro/Documents/Source/DungeonCrawler/player.h
-LinkedList.h
-C:/Users/bpiro/Documents/Source/DungeonCrawler/LinkedList.h
-
-C:/Users/bpiro/Documents/Source/DungeonCrawler/weapon.c
-weapon.h
-C:/Users/bpiro/Documents/Source/DungeonCrawler/weapon.h
-stdio.h
-C:/Users/bpiro/Documents/Source/DungeonCrawler/stdio.h
-
-C:/Users/bpiro/Documents/Source/DungeonCrawler/weapon.h
-player.h
-C:/Users/bpiro/Documents/Source/DungeonCrawler/player.h
 

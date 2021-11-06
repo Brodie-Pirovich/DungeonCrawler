@@ -75,17 +75,14 @@ void movePlayer(player_action_t playerAction, world_t* world, int* playerX, int*
         case INVENTORY:
             printInventory(inventory);
             return;
-            break;
         case QUIT:
             printf("Goodbye!\n");
             return;
-            break;
         default:
             return;
     }
 
-
-    movement_result_t result = CAN_MOVE;
+    movement_result_t result;
     if(*playerY+yMod < 0 ||
        *playerY+yMod > world->height-1 ||
        *playerX+xMod < 0 ||
@@ -132,8 +129,6 @@ void movePlayer(player_action_t playerAction, world_t* world, int* playerX, int*
 
 void printWorld(const world_t* world)
 {
-    printf("This is the world map:\n");
-
     int i, j;
     for(i = 0; i < world->height; i++)
     {
