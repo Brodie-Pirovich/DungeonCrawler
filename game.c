@@ -1,14 +1,10 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <io.h>
 #include "ai.h"
 #include "fileIO.h"
-#include "game.h"
-#include "linkedList.h"
+#include "LinkedList.h"
 
-world_t* createWorld();
 void printWorld(const world_t* world);
 void locateFirstItem(const world_t* world, char graphics, int* x, int* y);
 void runGame(world_t* world, int playerX, int playerY, inventory_t* inventory);
@@ -18,10 +14,8 @@ void freeMemory(world_t* world, inventory_t* inventory);
 int main()
 {
     inventory_t* playerInventory = createInventory();
-    // TODO: Add a health item to the inventory to keep track of player health
 
     system("cls");
-    printf("Welcome to the Dungeon!\n\n\n");
 
     //World loaded from file
     world_t* world = loadWorld();
@@ -51,7 +45,7 @@ void runGame(world_t* world, int playerX, int playerY, inventory_t* inventory)
         //the player's action is the first letter of their input
         playerAction = toupper((player_action_t)inputBuffer[0]);
         movePlayer(playerAction, world, &playerX, &playerY, inventory);
-        
+
 
     } while (playerAction != QUIT);
 }
@@ -65,27 +59,27 @@ void movePlayer(player_action_t playerAction, world_t* world, int* playerX, int*
         case NORTH:
             printf("Going North\n");
             yMod = -1;
-        break;
+            break;
         case SOUTH:
             printf("Going South\n");
             yMod = 1;
-        break;
+            break;
         case WEST:
             printf("Going West\n");
             xMod = -1;
-        break;
+            break;
         case EAST:
             printf("Going East\n");
             xMod = 1;
-        break;
+            break;
         case INVENTORY:
             printInventory(inventory);
             return;
-        break;
+            break;
         case QUIT:
             printf("Goodbye!\n");
             return;
-        break;
+            break;
         default:
             return;
     }
@@ -115,7 +109,7 @@ void movePlayer(player_action_t playerAction, world_t* world, int* playerX, int*
             result = CAN_MOVE;
         }
     }
-        
+
     if(result == CAN_MOVE)
     {
         //move the player in the correct direction and update their coordinates
@@ -144,7 +138,7 @@ void printWorld(const world_t* world)
     for(i = 0; i < world->height; i++)
     {
         for(j = 0; j < world->width; j++)
-        {        
+        {
             if(world->map[i][j] == NULL)
             {
                 printf("| . |");
@@ -166,7 +160,7 @@ void locateFirstItem(const world_t* world, char graphics, int* x, int*y)
     for(i = 0; i < world->height; i++)
     {
         for(j = 0; j < world->width; j++)
-        {        
+        {
             if(world->map[i][j] != NULL && world->map[i][j]->graphics == graphics)
             {
                 //return found item location
@@ -199,3 +193,4 @@ void freeMemory(world_t* world, inventory_t* inventory)
     //free the inventory
     freeInventory(inventory);
 }
+

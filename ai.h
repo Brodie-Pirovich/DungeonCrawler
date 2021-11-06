@@ -1,3 +1,6 @@
+#ifndef DUNGEONCRAWLER_AI_H
+#define DUNGEONCRAWLER_AI_H
+
 //forward declarations to prevent circular dependencies
 struct Item;
 struct Inventory;
@@ -9,3 +12,5 @@ enum MovementResult;
 typedef enum MovementResult (*AiBehaviour)(struct Inventory* inventory, struct Item* item);
 
 AiBehaviour textToBehaviour(const char* aiText);
+
+#endif

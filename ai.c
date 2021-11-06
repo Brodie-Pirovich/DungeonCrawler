@@ -1,6 +1,6 @@
 #include "ai.h"
 #include "game.h"
-#include "linkedList.h"
+#include "LinkedList.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -32,7 +32,7 @@ movement_result_t grabLogic(inventory_t* inventory, item_t* item)
 movement_result_t encounterLogic(inventory_t* inventory, item_t* item)
 {
     //TODO: Implement combat loop
-    printf("You come across a monster. /nIt charges towards you but you take it down with one swing of your sword.");
+    printf("You come across a monster.\n It charges towards you but you take it down with one shot of your weapon.");
     printf("The monster dropped a %s!\n\t%s\n", item->name, item->description);
     insertToTailOfList(inventory, item);
     return CAN_MOVE;
@@ -55,10 +55,5 @@ AiBehaviour textToBehaviour(const char* aiText)
     {
         behaviour = encounterLogic;
     }
-    else
-    {
-        printf("Error!");
-    }
-    
     return behaviour;
 }

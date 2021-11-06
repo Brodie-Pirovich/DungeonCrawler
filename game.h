@@ -1,5 +1,5 @@
-#ifndef GAME_H
-#define GAME_H
+#ifndef DUNGEONCRAWLER_GAME_H
+#define DUNGEONCRAWLER_GAME_H
 #include "ai.h"
 
 typedef struct Item

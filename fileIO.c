@@ -1,5 +1,4 @@
 #include "fileIO.h"
-#include "ai.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -40,3 +39,4 @@ world_t* loadWorld()
     fclose(worldFile);
     return newWorld;
 }
+
