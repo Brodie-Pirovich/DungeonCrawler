@@ -1,24 +1,28 @@
 #include "weapon.h"
 #include "stdio.h"
 
-void W_FirePistol()
+int W_FirePistol()
 {
     printf("You fire your pistol at the enemy\n");
+    return 30;
 }
 
-void W_FireShotgun()
+int W_FireShotgun()
 {
     printf("You fire your trusty shotgun at the enemy\n");
+    return 50;
 }
 
-void W_FireChaingun()
+int W_FireChaingun()
 {
     printf("You rain chaingun fire on the enemy\n");
+    return 50;
 }
 
-void W_FireRocketLauncher()
+int W_FireRocketLauncher()
 {
     printf("You fire a rocket at the enemy\n");
+    return 100;
 }
 
 void W_Attack(player_t* self)

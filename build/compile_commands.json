@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/bpiro/Documents/Source/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -O3 -DNDEBUG -std=gnu99 -o CMakeFiles\\DungeonCrawler.dir\\fileIO.c.obj -c C:\\Users\\bpiro\\Documents\\Source\\DungeonCrawler\\fileIO.c",
+  "file": "C:/Users/bpiro/Documents/Source/DungeonCrawler/fileIO.c"
+},
+{
+  "directory": "C:/Users/bpiro/Documents/Source/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -O3 -DNDEBUG -std=gnu99 -o CMakeFiles\\DungeonCrawler.dir\\LinkedList.c.obj -c C:\\Users\\bpiro\\Documents\\Source\\DungeonCrawler\\LinkedList.c",
+  "file": "C:/Users/bpiro/Documents/Source/DungeonCrawler/LinkedList.c"
+},
+{
+  "directory": "C:/Users/bpiro/Documents/Source/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -O3 -DNDEBUG -std=gnu99 -o CMakeFiles\\DungeonCrawler.dir\\ai.c.obj -c C:\\Users\\bpiro\\Documents\\Source\\DungeonCrawler\\ai.c",
+  "file": "C:/Users/bpiro/Documents/Source/DungeonCrawler/ai.c"
+},
+{
+  "directory": "C:/Users/bpiro/Documents/Source/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -O3 -DNDEBUG -std=gnu99 -o CMakeFiles\\DungeonCrawler.dir\\game.c.obj -c C:\\Users\\bpiro\\Documents\\Source\\DungeonCrawler\\game.c",
+  "file": "C:/Users/bpiro/Documents/Source/DungeonCrawler/game.c"
+},
+{
+  "directory": "C:/Users/bpiro/Documents/Source/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -O3 -DNDEBUG -std=gnu99 -o CMakeFiles\\DungeonCrawler.dir\\weapon.c.obj -c C:\\Users\\bpiro\\Documents\\Source\\DungeonCrawler\\weapon.c",
+  "file": "C:/Users/bpiro/Documents/Source/DungeonCrawler/weapon.c"
+},
+{
+  "directory": "C:/Users/bpiro/Documents/Source/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -O3 -DNDEBUG -std=gnu99 -o CMakeFiles\\DungeonCrawler.dir\\player.c.obj -c C:\\Users\\bpiro\\Documents\\Source\\DungeonCrawler\\player.c",
+  "file": "C:/Users/bpiro/Documents/Source/DungeonCrawler/player.c"
+}
+]

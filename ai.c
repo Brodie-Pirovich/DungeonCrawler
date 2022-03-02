@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 //This is the AI for when you hit an EXIT
 movement_result_t exitLogic(inventory_t* inventory, item_t* item)
 {
@@ -32,12 +31,12 @@ movement_result_t grabLogic(inventory_t* inventory, item_t* item)
 movement_result_t encounterLogic(inventory_t* inventory, item_t* item)
 {
     //TODO: Implement combat loop
+    int enemyHealth = 100;
     printf("You come across a monster.\n It charges towards you but you take it down with one shot of your weapon.");
     printf("The monster dropped a %s!\n\t%s\n", item->name, item->description);
     insertToTailOfList(inventory, item);
     return CAN_MOVE;
 }
-
 
 //this will retrieve an AI function based on a string.
 AiBehaviour textToBehaviour(const char* aiText)

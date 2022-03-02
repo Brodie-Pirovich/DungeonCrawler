@@ -3,10 +3,10 @@
 #include "player.h"
 
 
-void W_FirePistol();
-void W_FireShotgun();
-void W_FireChaingun();
-void W_FireRocketLauncher();
+int W_FirePistol();
+int W_FireShotgun();
+int W_FireChaingun();
+int W_FireRocketLauncher();
 
 void W_Attack(player_t* self);
 

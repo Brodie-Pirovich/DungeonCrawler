@@ -1,6 +1,7 @@
 #ifndef DUNGEONCRAWLER_PLAYER_H
 #define DUNGEONCRAWLER_PLAYER_H
 #include "LinkedList.h"
+
 #define IT_PISTOL  1
 #define IT_SHOTGUN 2
 #define IT_CHAINGUN  3
