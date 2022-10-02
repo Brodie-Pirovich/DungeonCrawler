@@ -40,8 +40,10 @@ void runGame(world_t* world, int playerX, int playerY, inventory_t* inventory)
         printf("Where do you want to go? (N, S, E, W, Q, I)");
         char inputBuffer[128];
         fgets(inputBuffer, 128, stdin);
+
         //clear the screen
         system("cls");
+        
         //the player's action is the first letter of their input
         playerAction = toupper((player_action_t)inputBuffer[0]);
         movePlayer(playerAction, world, &playerX, &playerY, inventory);
